@@ -16,21 +16,21 @@
         app:srcCompat="@drawable/mist" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/mailtext"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/editText2"
+        android:layout_above="@+id/pass"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
         android:textSize="16dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pass"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:background="#11000000"
@@ -41,8 +41,8 @@
         android:inputType="textPassword"
         android:layout_marginBottom="130dp"
         android:layout_alignBottom="@+id/cardView"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:layout_alignLeft="@+id/mailtext"
+        android:layout_alignStart="@+id/mailtext" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
@@ -72,7 +72,7 @@
     </android.support.v7.widget.CardView>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textreg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

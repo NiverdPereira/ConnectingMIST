@@ -32,10 +32,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         login= (CardView)findViewById(R.id.cardView);
         register=findViewById(R.id.textreg);
-        mail=findViewById(R.id.mailText);
+        mail=findViewById(R.id.mailtext);
         pass=findViewById(R.id.pass);
         mAuth=FirebaseAuth.getInstance();
         pdialog=new ProgressDialog(this);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,6 +70,6 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 pdialog.dismiss();
             }
-        })
+        });
     }
 }
